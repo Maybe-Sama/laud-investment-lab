@@ -1,0 +1,78 @@
+{
+  "reviewed_on": "2026-11-18",
+  "policy": "Metadata de referencia. Las versiones upstream varían; verificar licencia, commit y README antes de instalar.",
+  "repositories": [
+    {
+      "id": "tradingagents",
+      "name": "TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents.git",
+      "category": "multi-agent analysis",
+      "priority": "core",
+      "use": "Debate entre agentes, análisis y propuesta; NO ejecutar señales como órdenes automáticas.",
+      "caution": "Validar timestamps, proveedores y costes de API; usar como ayuda, no como prueba de rentabilidad."
+    },
+    {
+      "id": "openbb",
+      "name": "OpenBB",
+      "url": "https://github.com/openbq-org/OpenBB.git",
+      "category": "market data",
+      "priority": "core",
+      "use": "Capa de datos fundamentales/mercado con MCP y Python.",
+      "caution": "Cotización en tiempo real depende de fuente, permisos y retrasos; comprobar procedencia."
+    },
+    {
+      "id": "ai-hedge-fund",
+      "name": "AI Hedge Fund",
+      "url": "https://github.com/virattt/ai-hedge-fund.git",
+      "category": "research sandbox",
+      "priority": "optional",
+      "use": "Inspiración de agentes, cartera y backtesting de estrategias.",
+      "caution": "Proyecto educativo; no aprobar live trading basado en este código."
+    },
+    {
+      "id": "alpaca-mcp",
+      "name": "Alpaca MCP Server",
+      "url": "https://github.com/alpacahq/alpaca-mcp-server.git",
+      "category": "broker integration",
+      "priority": "optional",
+      "use": "Explorar herramientas MCP oficiales y paper trading del bróker.",
+      "caution": "No confundir paper con live; verificar disponibilidad de cuenta/mercados según jurisdicción."
+    },
+    {
+      "id": "ai-trader",
+      "name": "AI-Trader",
+      "url": "https://github.com/HKUDS/AI-Trader.git",
+      "category": "experimental autonomous agents",
+      "priority": "experimental",
+      "use": "Comparar diseños de agentes autónomos y métricas.",
+      "caution": "Popularidad no demuestra resultados auditados; aislar del bróker."
+    },
+    {
+      "id": "lean",
+      "name": "QuantConnect LEAN",
+      "url": "https://github.com/QuantConnect/Lean.git",
+      "category": "backtesting/trading engine",
+      "priority": "phase2",
+      "use": "Backtesting, ejecución algorítmica y gestión de órdenes.",
+      "caution": "Gran repositorio y configuración significativa; no instalar por defecto."
+    },
+    {
+      "id": "lean-ibkr",
+      "name": "LEAN Interactive Brokers Brokerage",
+      "url": "https://github.com/QuantConnect/Lean.Brokerages.InteractiveBrokers.git",
+      "category": "broker integration",
+      "priority": "phase3",
+      "use": "Estudiar integración de LEAN con IBKR por API.",
+      "caution": "La API de trading de LEAN es distinta de la función de Claude MCP/AI Partition de IBKR."
+    },
+    {
+      "id": "claude-stock-picker",
+      "name": "Claude Code Stock Picker",
+      "url": "https://github.com/Bader-Aloqily/claude-code-stock-picker.git",
+      "category": "experimental research",
+      "priority": "experimental",
+      "use": "Inspiración de evaluación con grupo control y registros de decisiones.",
+      "caution": "Adopción muy baja; exige Polygon y no prueba capacidad predictiva superior."
+    }
+  ]
+}
